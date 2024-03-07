@@ -1,14 +1,14 @@
 import React from 'react'
 
 import { motion } from "framer-motion";
-import image1 from "../assets/images/project/1 (1).jfif";
-import image2 from "../assets/images/project/1 (1).jpg";
-import image3 from "../assets/images/project/1 (4).jpg";
-import image4 from "../assets/images/project/1 (2).jfif";
-import image5 from "../assets/images/bg-image.jpg";
-import image6 from "../assets/images/construction-image-null.jpg";
-import image7 from "../assets/images/construction-image3.jpg";
-import image8 from "../assets/images/construction-site.jpg";
+import image1 from "../../assets/images/project/1 (1).jfif";
+import image2 from "../../assets/images/project/1 (1).jpg";
+import image3 from "../../assets/images/project/1 (4).jpg";
+import image4 from "../../assets/images/project/1 (2).jfif";
+import image5 from "../../assets/images/bg-image.jpg";
+import image6 from "../../assets/images/construction-image-null.jpg";
+import image7 from "../../assets/images/construction-image3.jpg";
+import image8 from "../../assets/images/construction-site.jpg";
 
 function Projects() {
   return (

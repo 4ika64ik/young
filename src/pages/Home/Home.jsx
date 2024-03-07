@@ -2,19 +2,19 @@ import React, { useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
-import construction1 from '../assets/images/construction-image.jpg';
-import construction2 from '../assets/images/bg-image.jpg';
-import construction3 from '../assets/images/construction-bg.jpg';
-import image1 from '../assets/images/construction-image.jpg';
-import image2 from '../assets/images/construction-image1.jpg';
-import image3 from '../assets/images/construction-image5.jpg';
-import image4 from '../assets/images/construction-image-null.jpg';
-import image5 from '../assets/images/construction-site.jpg';
-import image6 from '../assets/images/bg-image.jpg';
-import image7 from '../assets/images/construction-image4.jpg';
-import image8 from '../assets/images/construction-bg.jpg';
+import construction1 from '../../assets/images/construction-image.jpg';
+import construction2 from '../../assets/images/bg-image.jpg';
+import construction3 from '../../assets/images/construction-bg.jpg';
+import image1 from '../../assets/images/construction-image.jpg';
+import image2 from '../../assets/images/construction-image1.jpg';
+import image3 from '../../assets/images/construction-image5.jpg';
+import image4 from '../../assets/images/construction-image-null.jpg';
+import image5 from '../../assets/images/construction-site.jpg';
+import image6 from '../../assets/images/bg-image.jpg';
+import image7 from '../../assets/images/construction-image4.jpg';
+import image8 from '../../assets/images/construction-bg.jpg';
 import TypeWriterEffect from 'react-typewriter-effect';
-import '../pages/timeline.css';
+import '../timeline.css';
 import { Link, NavLink } from 'react-router-dom';
 
 const Home = () => {
