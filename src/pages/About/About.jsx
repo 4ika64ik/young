@@ -1,8 +1,8 @@
 import React from "react";
-import construction1 from "../assets/images/construction-image-null.jpg";
-import icon1 from "../assets/images/ico1.png";
-import icon2 from "../assets/images/ico3.png";
-import icon3 from "../assets/images/ico2.png";
+import construction1 from "../../assets/images/construction-image-null.jpg";
+import icon1 from "../../assets/images/ico1.png";
+import icon2 from "../../assets/images/ico3.png";
+import icon3 from "../../assets/images/ico2.png";
 import TypeWriterEffect from "react-typewriter-effect";
 import { motion } from "framer-motion";
 
@@ -38,6 +38,12 @@ function About() {
               <p className="text-sm lg:text-2xl ss:text-sm md:text-sm sm:text-sm">
                 Build Construction" - это компания, которая начала свой путь с мечтой о создании инновационных и устойчивых строительных решений. Наша история началась с небольшой группы энтузиастов, объединивших свои знания и опыт в строительной отрасли, чтобы создать нечто уникальное.
               </p>
+              <div className="py-16">
+                <a href="mailto:k3655692@gmail.com?subject=Заявка"
+                   className="py-2 px-5 lg:px-8 border border-green-500 text-green-500 hover:bg-green-100">
+                  Оставьте заявку
+                </a>
+              </div>
             </div>
             <div className="md:col-span-6 col-span-12 p-6">
               <img src={construction1} alt="" />

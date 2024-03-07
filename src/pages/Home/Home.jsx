@@ -1,18 +1,9 @@
 import React, { useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-
 import construction1 from '../../assets/images/construction-image.jpg';
 import construction2 from '../../assets/images/bg-image.jpg';
 import construction3 from '../../assets/images/construction-bg.jpg';
-import image1 from '../../assets/images/construction-image.jpg';
-import image2 from '../../assets/images/construction-image1.jpg';
-import image3 from '../../assets/images/construction-image5.jpg';
-import image4 from '../../assets/images/construction-image-null.jpg';
-import image5 from '../../assets/images/construction-site.jpg';
-import image6 from '../../assets/images/bg-image.jpg';
-import image7 from '../../assets/images/construction-image4.jpg';
-import image8 from '../../assets/images/construction-bg.jpg';
 import TypeWriterEffect from 'react-typewriter-effect';
 import '../timeline.css';
 import { Link, NavLink } from 'react-router-dom';
@@ -90,25 +81,11 @@ const Home = () => {
                 Мы стремимся к совершенству во всем, что мы делаем. Наша команда опытных мастеров и лицензированных электриков работает вместе, чтобы обеспечить исключительные результаты, превосходящие ожидания наших клиентов. Наше видение состоит в том, чтобы установить новый стандарт качества и инноваций в сфере строительных и электротехнических услуг, построив прочные отношения с нашими клиентами благодаря нашей приверженности качеству и опыту.
               </p>
               <NavLink to="/about">
-                <button className="btn hover:shadow-lg hover:bg-warning hover:text-white lg:btn-lg btn-warning flex flex-row justify-center items-center gap-3 my-4 text-black">
-                  Больше
-                  <span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth={1.5}
-                      stroke="currentColor"
-                      className="w-6 h-6"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
-                      />
-                    </svg>
-                  </span>
-                </button>
+                <div className="mt-16">
+                  <Link to="/contact" className="py-2 px-5 lg:px-8 border border-green-500 text-green-500 hover:bg-green-100 ">
+                    Оставить заявку
+                  </Link>
+                </div>
               </NavLink>
             </motion.div>
           </motion.div>
@@ -170,7 +147,6 @@ const Home = () => {
                     <p>
                       от 15 до 21 евро в час, в зависимости от квалификации и опыта работы.
                     </p>
-                    <a href="#">Больше</a>
                     <span className="circle"></span>
                   </li>
                   <li>
@@ -178,9 +154,8 @@ const Home = () => {
                       Предоставление жилья:
                     </h3>
                     <p>
-                      наша компания предоставляет жилье для сотрудников, что обеспечивает комфортные условия проживания во время работы.
+                      Наша компания набирает в свою команду новых специалистов с опытом и без. Мы стремимся к совершенству во всем, что мы делаем. От нас своевременная оплата, приятные условия работы - от вас желания работать
                     </p>
-                    <a href="#">Больше</a>
                     <span className="circle"></span>
                   </li>
                   <li>
@@ -190,7 +165,6 @@ const Home = () => {
                     <p>
                       мы готовы принимать как специалистов со значительным опытом работы, так и тех, кто только начинает свою карьеру в строительной отрасли. Мы ценим мотивацию и готовность к обучению.
                     </p>
-                    <a href="#">Больше</a>
                     <span className="circle"></span>
                   </li>
                   <li>
@@ -200,7 +174,6 @@ const Home = () => {
                     <p>
                       наша компания обеспечивает питание для сотрудников во время рабочего дня.
                     </p>
-                    <a href="#">Больше </a>
                     <span className="circle"></span>
                   </li>
                 </ul>
@@ -209,44 +182,23 @@ const Home = () => {
           </div>
         </div>
       </section>
-
       <section className="flex flex-col px-6">
         <div className="flex md:justify-center md:items-center w-full my-5">
-          <h1 className="text-sm flex flex-col md:flex-row font-bold text-green-600 uppercase">
-            <span>Наши</span>
-            <span className="text-black">&nbsp; проекты</span>
-          </h1>
         </div>
-        <div className="w-full max-w-5xl p-5 pb-10 mx-auto mb-10 gap-5 columns-4 space-y-5">
-          <img src={image1} alt="project-image-1" />
-          <img src={image2} alt="project-image-1" />
-          <img src={image3} alt="project-image-1" />
-          <img src={image4} alt="project-image-1" />
-          <img src={image5} alt="project-image-1" />
-          <img src={image6} alt="project-image-1" />
-          <img src={image7} alt="project-image-1" />
-          <img src={image8} alt="project-image-1" />
-        </div>
-
-        <div className="w-full flex items-center justify-center mb-12">
-          <NavLink to="/projects">
-            <button className="btn btn-lg bg-green-600  border-none text-white">
-              Смотреть галерею{" "}
-            </button>
-          </NavLink>
+        <div className="flex justify-center">
+          <p className="lg:text-3xl md:text-sm sm:text-xl text-center">
+            Хотите к нам на работу?
+            <br/> Оставьте свой номер для связи
+          </p>
         </div>
       </section>
-
-      <section className="flex px-6">
-        {/* <div className="flex flex-col justify-center items-center w-full my-5">
-          <h1 className="text-[2.5rem] flex flex-col md:flex-row font-bold text-green-600 uppercase">
-            <span>Testimonials</span>
-          </h1>
-          <span className="w-16 h-4 bg-green-600 relative rounded-full"></span>
-        </div> */}
+      <section className="flex px-6 justify-center pb-20 py-10">
+        <Link to="/contact"
+           className="py-2 px-5 lg:px-8 border border-green-500 text-green-500 hover:bg-green-100">
+          Оставьте заявку
+        </Link>
       </section>
     </motion.div>
   );
 }
-
 export default Home

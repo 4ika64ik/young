@@ -5,13 +5,7 @@ function Footer() {
   return (
       <footer className="footer p-28 text-lg bg-base-200 text-base-content font-semibold">
         <div className='flex flex-col -mt-10'>
-            <p className="lg:text-4xl font-bold sm:text-sm"> Build <span className="text-green-500">Construction</span></p>
-            <p>
-            <br />
-                Свяжитесь с нами для получения эффективных решений
-            <br />
-            <a href='#' className='link text-blue-600 font-semibold'>example@.com</a>
-          </p>
+
         </div>
         <div className="uppercase">
           <span className="footer-title">Разделы</span>
@@ -37,11 +31,6 @@ function Footer() {
             <Link to="/projects">
                 <p className="link link-hover">Проекты</p>
             </Link>
-        </div>
-        <div className="uppercase">
-          <a className="link link-hover">PH: +1-234-567-8910</a>
-          <a className="link link-hover">FAX: +1-234-567-8910</a>
-          <a className="link link-hover">example@.com</a>
         </div>
       </footer>
   );
